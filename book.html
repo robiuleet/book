@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Arcive</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="grid grid-cols-3 gap-5 my-8 mx-12">
+
+        <div class="col-span-2 ">
+
+
+        </div>
+
+        <!-- 
+            Button and input area
+         -->
+
+        <div class="mt-16 border-2 rounded-md">
+            <div>
+
+                <textarea id="input-bar" class="bg-gray-100 border-2 border-transparent mx-4 mt-4 px-4 rounded-md"
+                    cols="30" rows="2"></textarea>
+            </div>
+
+            <div class="grid grid-cols-5">
+                <div class="col-span-1">
+                    <button onclick="loadBook()"
+                        class=" font-light bg-red-600 px-4 py-2 text-lg mx-4 my-4 text-white border-2 border-gray-300 rounded-md">Search</button>
+
+                </div>
+                <div class="col-span-4  ">
+                    <p id="empty-message" class=" hidden text-red-700 font-medium text-center text-md">Please Write
+                        Something!</p>
+                    <p class=" text-green-700 font-light text-top text-center" id="result"></p>
+                    <p class=" text-red-700 font-semibold text-bottom text-center" id="no-result"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 
+        Book Area
+     -->
+
+    <section class="container flex justify-center m-12 p-4">
+
+        <div id="book-container" class="grid grid-cols-3 gap-8">
+
+
+        </div>
+    </section>
+
+    <script src="app.js">
+
+    </script>
+
+</body>
+
+</html>
